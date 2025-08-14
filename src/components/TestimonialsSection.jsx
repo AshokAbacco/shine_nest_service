@@ -1,68 +1,78 @@
 import { motion } from 'framer-motion';
-import jswLogo from '/images/nike-logo.png'; // replace with your logo path
+import Accetion from '/images/Accetion.jpg';
+import aerospace from '/images/aerospace.jpg';
+import ashield from '/images/ashield.jpg';
+import billsafe from '/images/billsafe.jpg';
+import calibr from '/images/calibr.jpg';
+import docttocare from '/images/docttocare.jpg';
+import ecobillz from '/images/ecobillz.jpg';
+import finclus from '/images/finclus.jpg';
+import neuropixel from '/images/neuropixel.jpg';
+import newtral from '/images/newtral.jpg';
 
 const testimonials = [
     {
         name: 'Hemant Sabat',
         title: 'Deputy General Manager',
-        text: `We are happy with Elite Soft Services’ facility management for our steel plant. Their investment in equipment and focus on safety resulted in excellent hygiene and operational standards.`,
-        logo: jswLogo,
+        text: `Accetion’s facility management services for our steel plant have been exceptional. Their focus on innovation, safety, and operational efficiency has greatly improved our workplace standards.`,
+        logo: Accetion,
     },
     {
         name: 'Ankita Sharma',
         title: 'Operations Head',
-        text: `Elite Soft Services has provided us with reliable and professional cleaning solutions. Their attention to detail has exceeded our expectations.`,
-        logo: jswLogo,
+        text: `Aerospace’s specialized cleaning solutions have kept our manufacturing spaces spotless and compliant with industry safety norms. Their precision and professionalism are unmatched.`,
+        logo: aerospace,
     },
     {
         name: 'Ravi Kumar',
         title: 'Facility Manager',
-        text: `Working with Elite Soft Services has been seamless. Their proactive approach ensures our property is always well maintained.`,
-        logo: jswLogo,
+        text: `Ashield’s proactive maintenance and protection strategies have ensured our facilities remain secure, clean, and operational at all times.`,
+        logo: ashield,
     },
     {
         name: 'Sunita Desai',
         title: 'Office Manager',
-        text: `The team is highly skilled and very responsive. We’ve seen a significant improvement in our workplace hygiene since partnering with them.`,
-        logo: jswLogo,
+        text: `Billsafe’s team is incredibly efficient and detail-oriented. Their commitment to keeping our workplace hygienic has made a noticeable difference.`,
+        logo: billsafe,
     },
     {
         name: 'Rajesh Iyer',
         title: 'Plant Supervisor',
-        text: `Elite Soft Services’ on-site presence and support is unmatched. Their quality of work speaks for itself.`,
-        logo: jswLogo,
+        text: `Calibr’s on-site support and precise service execution have streamlined our plant operations while maintaining exceptional cleanliness standards.`,
+        logo: calibr,
     },
     {
         name: 'Priya Verma',
         title: 'Admin Head',
-        text: `Very satisfied with the service quality. The team is friendly, professional, and always on time.`,
-        logo: jswLogo,
+        text: `Docttocare’s approach to hygiene and safety reflects genuine care for our team’s well-being. Their professionalism is evident in every service.`,
+        logo: docttocare,
     },
     {
         name: 'Amit Mehra',
         title: 'Operations Manager',
-        text: `Their innovative cleaning solutions have helped us maintain a safe and hygienic environment.`,
-        logo: jswLogo,
+        text: `Ecobillz’s eco-friendly cleaning practices have helped us maintain a sustainable, safe, and spotless work environment.`,
+        logo: ecobillz,
     },
     {
         name: 'Neha Kapoor',
         title: 'HR Manager',
-        text: `Elite Soft Services understands our requirements well and consistently delivers beyond expectations.`,
-        logo: jswLogo,
+        text: `Finclus understands our operational needs and consistently delivers cleaning solutions that boost both hygiene and employee satisfaction.`,
+        logo: finclus,
     },
     {
         name: 'Vikram Patel',
         title: 'Logistics Head',
-        text: `Their professionalism and work ethics are truly commendable. Highly recommend their services.`,
-        logo: jswLogo,
+        text: `Neuropixel’s meticulous attention to detail ensures our logistics hubs remain clean, organized, and ready for operations at all times.`,
+        logo: neuropixel,
     },
     {
         name: 'Arun Gupta',
         title: 'Chief Engineer',
-        text: `Reliable, efficient, and extremely professional. Elite Soft Services has been a trusted partner for us.`,
-        logo: jswLogo,
+        text: `Newtral’s reliable services and consistent quality have made them a trusted partner in maintaining our infrastructure to the highest standards.`,
+        logo: newtral,
     },
 ];
+
 
 const TestimonialsSection = () => {
     return (

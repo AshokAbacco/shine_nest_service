@@ -1,48 +1,36 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
-import {
-  Facebook,
-  Twitter,
-  Instagram,
-  Github,
-} from "lucide-react"; // Install: npm install lucide-react
+import { Facebook, Twitter, Instagram, Github } from "lucide-react";
 
 const Footer = () => {
   return (
     <footer className="bg-[#030637] text-white py-12 px-6 md:px-16">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
-
+      {/* Top Section: Links only */}
+      <div className="max-w-8xl mx-auto grid grid-cols-1 sm:grid-cols-4 gap-10">
         {/* Logo + Menu */}
         <div>
-          <h1 className="text-2xl font-bold text-white mb-3">Shine Nest Services</h1>
+          <div className="mb-3 flex justify-center">
+            <img
+              src="/images/img2.png"
+              alt="Company Logo"
+              className="w-[300px]  object-contain"
+              style={{
+                filter: "",
+              }}
+            />
+          </div>
+          <ul className="space-y-2 text-gray-300">
+          </ul>
+        </div>
+
+        {/* About */}
+        <div>
+          <h3 className="text-lg font-semibold mb-3 text-white">Company</h3>
           <ul className="space-y-2 text-gray-300">
             <li><Link to="/about">About</Link></li>
             <li><Link to="/services">Services</Link></li>
             <li><Link to="/testimonials">Testimonials</Link></li>
-            <li><Link to="/contact">Contact</Link></li>
-          </ul>
-        </div>
-        {/* About */}
-        <div>
-          <h3 className="text-lg font-semibold mb-3 text-white">About</h3>
-          <ul className="space-y-2 text-gray-300">
-
-            <li><a href="#">Company</a></li>
             <li><Link to="/FAQ">FAQs</Link></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">Recent Updates</a></li>
-
-          </ul>
-        </div>
-
-        {/* Resources */}
-        <div>
-          <h3 className="text-lg font-semibold mb-3 text-white">Resources</h3>
-          <ul className="space-y-2 text-gray-300">
-            <li><Link to="#">Development Tutorials</Link></li>
-            <li><Link to="#">Documentation</Link></li>
-            <li><Link to="#">Blog</Link></li>
           </ul>
         </div>
 
@@ -50,13 +38,18 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-semibold mb-3 text-white">Support</h3>
           <ul className="space-y-2 text-gray-300">
+            <li><Link to="/contact">Contact</Link></li>
             <li><Link to="/contact">Customer Support</Link></li>
-            <li><a href="#"> Updates</a></li>
             <li><Link to="/terms-and-privacy">Privacy Policy</Link></li>
             <li><Link to="/terms-and-privacy">Terms & Conditions</Link></li>
-
           </ul>
         </div>
+        {/* Address in bottom right */}
+        <div className="text-white text-sm leading-5 md:text-light max-w-xs">
+          <h1 className="text-[1.2rem] font-semibold mb-4">Address</h1>
+          <p>Ground Floor, No 20, Krishna Temple Road, Near Ramya Provision Store, Dodda Bommasandra, Bengaluru, 560097</p>
+        </div>
+
       </div>
 
       {/* Bottom Footer */}
