@@ -78,7 +78,7 @@ const Footer = () => {
 
         {/* Copyright */}
         <div>
-          © Copyright 2025. All Rights Reserved
+          © Copyright {new Date().getFullYear()}. All Rights Reserved
         </div>
       </div>
     </footer>

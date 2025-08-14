@@ -5,12 +5,12 @@ import "../styles/homePage.css"; // adjust path as needed
 import Navbar from '../components/Navbar';
 import WhyChooseUs from '../components/WhyChooseUs'; // adjust path as needed
 import TestimonialsSection from '../components/TestimonialsSection';
-import ClientMarquee from '../components/ClientMarquee';
+// import ClientMarquee from '../components/ClientMarquee';
 import Footer from '../components/Footer';
 import ServicesSection from '../components/ServicesSection';
 const HomePage = () => {
     return (
-        <div className="bg-[#030637] text-white">
+        <div className="x text-white">
             <Navbar />
             {/* Hero Carousel */}
             <section className="h-screen flex items-center justify-center">
@@ -64,9 +64,9 @@ const HomePage = () => {
             </section>
 
             {/* Trusted by Clients */}
-            <section className="px-8 py-16 bg-white text-[#030637]">
+            {/* <section className="px-8 py-16 bg-white text-[#030637]">
                 <ClientMarquee />
-            </section>
+            </section> */}
 
             {/* Why Choose Us */}
             <section className="px-8 py-16 text-white bg-[#4300FF]">

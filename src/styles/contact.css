@@ -1,13 +1,12 @@
 /* contact.css */
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
   margin: 0;
   padding: 0;
   min-height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
 }
-
 
 .contact-container {
   display: flex;
@@ -61,12 +60,10 @@ body {
   font-size: 14px;
 }
 
-
-
 .contact-card h1 {
   font-size: 40px;
   margin-bottom: 20px;
-  color: #4300FF;
+  color: #4300ff;
   text-align: center;
   font-weight: 700;
 }
@@ -79,7 +76,7 @@ body {
   display: block;
   margin-bottom: 6px;
   font-weight: 600;
-  color: #4300FF;
+  color: #4300ff;
 }
 
 .form-group input,
@@ -129,7 +126,6 @@ body {
   text-decoration: underline;
 }
 
-
 /* Scrollbar for WebKit browsers (Chrome, Edge, Safari) */
 ::-webkit-scrollbar {
   width: 8px;
@@ -152,19 +148,17 @@ body {
   scrollbar-color: #030637 transparent;
 }
 
-
 .contact-card {
   /* existing styles... */
-  overflow-y: scroll;  /* or auto if you prefer */
+  overflow-y: scroll; /* or auto if you prefer */
   scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none;  /* IE 10+ */
+  -ms-overflow-style: none; /* IE 10+ */
 }
 
 /* Chrome, Safari, Edge */
 .contact-card::-webkit-scrollbar {
   display: none;
 }
-
 
 .sidebar-wrapper {
   position: fixed;
@@ -200,9 +194,6 @@ body {
   max-height: 1000px;
   padding-top: 10px;
 }
-
-
-
 
 .contact-container {
   display: flex;
@@ -258,15 +249,13 @@ body {
   }
 
   .contact-info h2 {
-  padding-top: 25rem;
-  font-size: 60px;
-  margin-bottom: 16px;
+    padding-top: 25rem;
+    font-size: 60px;
+    margin-bottom: 16px;
+  }
 }
-}
-
 
 .contact-info h2 {
-  
   font-size: 60px;
   margin-bottom: 16px;
 }
@@ -289,13 +278,13 @@ body {
 }
 
 .social-icons a {
-  color: #B13BFF;
+  color: #b13bff;
   font-size: 20px;
   transition: color 0.3s ease;
 }
 
 .social-icons a:hover {
-  color: #B13BFF;
+  color: #b13bff;
 }
 
 .contact-card {
@@ -378,7 +367,6 @@ form {
   }
 }
 
-
 .social-icons {
   display: flex;
   gap: 40px;
@@ -391,7 +379,7 @@ form {
   width: 10px;
   height: 40px;
   color: white;
-  background-color: #B13BFF;
+  background-color: #b13bff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -402,7 +390,7 @@ form {
 }
 
 .social-icons .icon:hover {
-  background-color: #B13BFF;
+  background-color: #b13bff;
   transform: scale(1.1);
 }
 
@@ -445,23 +433,21 @@ form {
   margin-top: 40px;
   align-items: center;
   background-color: #030637;
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   z-index: 0;
 }
 
+.map-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 
-.map-section{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-
-    padding-bottom: 5rem;
-
+  padding-bottom: 5rem;
 }
 
 h2.map-heading {
@@ -469,7 +455,7 @@ h2.map-heading {
   font-weight: 700;
   color: #030637;
   text-align: center;
-  
+
   margin-top: 40px;
   margin-bottom: 20px;
   text-transform: uppercase;
@@ -478,61 +464,59 @@ h2.map-heading {
 }
 
 h2.map-heading::after {
-  content: '';
+  content: "";
   display: block;
-  width: 60px;
-  height: 3px;
-  background-color: #EAA64D;
+  width: 150px;
+  height: 4px;
+  background-color: #4400ff;
   margin: 10px auto 0 auto;
   border-radius: 2px;
 }
 
 /* Final interactive map section styles */
 .interactive-map-final {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: #fff;
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #fff;
 }
 
 .map-icon-wrapper {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
 }
 
 .map-icon {
-    font-size: 48px;
-    color: #B13BFF;
+  font-size: 48px;
+  color: #b13bff;
 }
 
 .map-title {
-    font-size: 24px;
-    font-weight: 700;
-    color: #222;
-    margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 10px;
 }
 
 .map-description {
-    font-size: 16px;
-    color: #555;
-    margin-bottom: 30px;
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 30px;
 }
 
 .map-cta-button {
-    display: inline-block;
-    background-color: #030637;
-    color: white;
-    padding: 14px 30px;
-    border-radius: 50px;
-    font-weight: bold;
-    font-size: 14px;
-    text-decoration: none;
-    box-shadow: 0 8px 20px rgba(138, 43, 226, 0.3);
-    transition: background-color 0.3s ease;
+  display: inline-block;
+  background-color: #030637;
+  color: white;
+  padding: 14px 30px;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 14px;
+  text-decoration: none;
+  box-shadow: 0 8px 20px rgba(138, 43, 226, 0.3);
+  transition: background-color 0.3s ease;
 }
 
 .map-cta-button:hover {
-    background-color: #6c1bb2;
+  background-color: #6c1bb2;
 }
-
-

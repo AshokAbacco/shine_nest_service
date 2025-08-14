@@ -49,16 +49,36 @@
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
-
-.logo-cards {
+..logo-card {
   background: #ebebeb;
-  margin-right: 2rem;
   padding: 1rem;
+  margin-right: 2rem;
   height: 6rem;
+  min-width: 8rem;
   border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-@keyframes marquee {
+.marquee-wrapper {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: scroll-left 25s linear infinite;
+}
+
+.marquee-wrapper.reverse .marquee-track {
+  animation: scroll-right 25s linear infinite;
+}
+
+/* Keyframes */
+@keyframes scroll-left {
   0% {
     transform: translateX(0%);
   }
@@ -67,7 +87,7 @@
   }
 }
 
-@keyframes marquee-reverse {
+@keyframes scroll-right {
   0% {
     transform: translateX(0%);
   }
@@ -76,16 +96,6 @@
   }
 }
 
-.animate-marquee {
-  animation: marquee 25s linear infinite;
-}
-
-.animate-marquee-reverse {
-  animation: marquee-reverse 25s linear infinite;
-}
-
 .blur-sm {
   filter: blur(3px);
 }
-
-
