@@ -22,26 +22,33 @@ const ClientMarquee = () => {
                 Over 500 clients have trusted us across India
             </h2>
 
-            <div className="overflow-hidden relative space-y-6 ">
+            <div className="space-y-8 overflow-hidden">
+
                 {/* Top Row */}
-                <div className="flex space-x-12 animate-marquee whitespace-nowrap">
-                    {clients.concat(clients).map((icon, i) => (
-                        <div key={i} className="flex items-center justify-center w-32 logo-cards">
-                            {icon}
-                        </div>
-                    ))}
+                <div className="marquee-wrapper">
+                    <div className="marquee-track">
+                        {[...clients, ...clients].map((icon, i) => (
+                            <div key={`top-${i}`} className="logo-card">
+                                {icon}
+                            </div>
+                        ))}
+                    </div>
                 </div>
 
-                {/* Bottom Row */}
-                <div className="flex space-x-12 animate-marquee-reverse whitespace-nowrap ">
-                    {clients.concat(clients).map((icon, i) => (
-                        <div key={i} className="flex items-center justify-center w-32 logo-cards">
-                            {icon}
-                        </div>
-                    ))}
+                {/* Bottom Row - reverse */}
+                <div className="marquee-wrapper reverse">
+                    <div className="marquee-track">
+                        {[...clients, ...clients].map((icon, i) => (
+                            <div key={`bottom-${i}`} className="logo-card">
+                                {icon}
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
         </section>
+
+
     );
 };
 

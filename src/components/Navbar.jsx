@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../assets/image.png'; // Adjust path as needed
+import logo from '../assets/sns-logo.png'; // Adjust path as needed
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -19,7 +19,7 @@ const Navbar = () => {
             <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
                 {/* Logo */}
                 <Link to="/" className="logo-link">
-                    <img src={logo} alt="Logo" className="h-16 w-auto object-contain" />
+                    <img src={logo} alt="Logo" className="h-18 w-auto object-contain" />
                 </Link>
 
                 {/* Desktop Nav Links */}
