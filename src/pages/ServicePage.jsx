@@ -137,7 +137,7 @@ function ServicePage() {
       <Navbar />
       <div className="service-page text-white relative overflow-hidden min-h-screen flex items-center justify-between px-6 md:px-20 py-10">
         {/* Bubbles */}
-        {[
+        {/* {[
           { top: "top-10", left: "left-10", size: "w-6 h-6" },
           {
             bottom: "bottom-20",
@@ -228,7 +228,32 @@ function ServicePage() {
               bubble.delay || ""
             }`}
           />
+        ))} */}
+        {/* Bubbles ==> Sparkle/Star Icon */}
+        {[
+        { top: "top-10", left: "left-10", size: "text-xl" },
+        { bottom: "bottom-20", left: "left-40", size: "text-base", delay: "delay-200" },
+        { top: "top-1/3", right: "right-20", size: "text-lg", delay: "delay-500" },
+        { bottom: "bottom-10", right: "right-10", size: "text-2xl", delay: "delay-1000" },
+        { top: "top-[18%]", left: "left-[30%]", size: "text-xl", delay: "delay-700" },
+        { bottom: "bottom-24", left: "left-[70%]", size: "text-base", delay: "delay-300" },
+        { top: "top-1/3", right: "right-[50%]", size: "text-lg", delay: "delay-500" },
+        { bottom: "bottom-10", right: "right-[30%]", size: "text-2xl", delay: "delay-800" },
+        { top: "top-[15%]", left: "left-[10%]", size: "text-sm", delay: "delay-300" },
+        { top: "top-[30%]", left: "left-[20%]", size: "text-base", delay: "delay-500" },
+        { top: "top-[45%]", left: "left-[30%]", size: "text-xl", delay: "delay-700" },
+        { top: "top-[60%]", left: "left-[35%]", size: "text-xs", delay: "delay-[850ms]" },
+        { top: "top-[75%]", left: "left-[25%]", size: "text-base", delay: "delay-[1000ms]" },
+        { bottom: "bottom-[10%]", left: "left-[15%]", size: "text-sm", delay: "delay-[1200ms]" },
+        ].map((sparkle, i) => (
+          <span
+            key={i}
+            className={`absolute ${sparkle.top || ""} ${sparkle.bottom || ""} ${sparkle.left || ""} ${sparkle.right || ""} ${sparkle.size} text-white opacity-100 animate-ping ${sparkle.delay || ""}`}
+          >
+            ✦ 
+          </span>
         ))}
+
 
         {/* home TEXT */}
         <div className="max-w-xl z-10 ml-5">

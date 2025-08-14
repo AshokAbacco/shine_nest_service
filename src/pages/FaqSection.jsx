@@ -75,38 +75,44 @@ export default function FaqSection() {
   };
 
   return (
-    <div className="">
-        <Navbar/>
-       <div
-        className="bg-cover bg-center bg-no-repeat h-[300px] flex flex-col items-center justify-center text-white text-center px-4"
-        style={{
-            backgroundImage:
-            "url('https://t3.ftcdn.net/jpg/03/40/29/88/360_F_340298830_J3bIrdYo4CEGF24HeBkhj7b1LuRrywI8.jpg')",
-        }}>
-        <h1 className="text-4xl md:text-5xl font-bold drop-shadow-lg text-blue-800">
-            FREQUENTLY ASKED QUESTIONS
-        </h1>
-        <p className="mt-4 text-lg md:text-xl max-w-1xl text-blue-800 px-6 py-4 bg-white/30 backdrop-blur rounded-lg shadow-md">
-        Explore common queries about our Facility Management and Handiman Services. If your question isn’t listed, feel free to contact us directly.
-        </p>
+<div className="w-full">
+  <Navbar />
 
-        </div>
-        
-        <div className="max-w-3xl mx-auto px-4 py-10">
-            <h2 className="text-3xl font-bold text-center mb-8 text-gray-800"></h2>
-            <div className="space-y-4">
-                {faqs.map((faq, index) => (
-                <FAQItem
-                    key={index}
-                    faq={faq}
-                    isOpen={activeIndex === index}
-                    onClick={() => toggleFAQ(index)}
-                />
-                ))}
-            </div>
-        </div>
-        <Footer/>
+  {/* Banner Section */}
+  <div
+    className="bg-cover bg-center bg-no-repeat h-[300px] flex flex-col items-center justify-center text-white text-center px-4"
+    style={{
+      backgroundImage:
+        "url('https://t3.ftcdn.net/jpg/03/40/29/88/360_F_340298830_J3bIrdYo4CEGF24HeBkhj7b1LuRrywI8.jpg')",
+    }}
+  >
+    <h1 className="text-4xl md:text-5xl font-bold drop-shadow-lg text-blue-800">
+      FREQUENTLY ASKED QUESTIONS
+    </h1>
+    <p className="mt-4 text-base sm:text-lg md:text-xl w-full max-w-lg text-blue-800 px-4 py-4 bg-white/30 backdrop-blur rounded-lg shadow-md">
+      Explore common queries about our Facility Management and Handiman Services. If your question isn’t listed, feel free to contact us directly.
+    </p>
+
+  </div>
+
+  {/* FAQ List */}
+  <div className="w-full max-w-4xl mx-auto px-4 py-10">
+    <h2 className="text-3xl font-bold text-center mb-8 text-gray-800"></h2>
+    <div className="space-y-4">
+      {faqs.map((faq, index) => (
+        <FAQItem
+          key={index}
+          faq={faq}
+          isOpen={activeIndex === index}
+          onClick={() => toggleFAQ(index)}
+        />
+      ))}
     </div>
+  </div>
+
+  <Footer />
+</div>
+
   );
 }
 
@@ -114,32 +120,31 @@ function FAQItem({ faq, isOpen, onClick }) {
   const contentRef = useRef(null);
 
   return (
-    <div className="">
-     
-        <div className="border border-blue-800 rounded-xl overflow-hidden transition-shadow hover:shadow-md w-180">
-        <button
-            onClick={onClick}
-            className="w-full flex justify-between items-center text-left px-6 py-5 bg-white"
-        >
-            <span className="text-gray-800 font-medium">{faq.question}</span>
-            {isOpen ? (
-            <ChevronUpIcon className="h-5 w-5 text-blue-600 transition-transform duration-300" />
-            ) : (
-            <ChevronDownIcon className="h-5 w-5 text-blue-600 transition-transform duration-300" />
-            )}
-        </button>
+    <div className="px-4 sm:px-6 md:px-8 lg:px-10 w-full max-w-3xl mx-auto">
+  <div className="border border-blue-800 rounded-xl overflow-hidden transition-shadow hover:shadow-md w-full">
+    <button
+      onClick={onClick}
+      className="w-full flex justify-between items-center text-left px-6 py-5 bg-white"
+    >
+      <span className="text-gray-800 font-medium">{faq.question}</span>
+      {isOpen ? (
+        <ChevronUpIcon className="h-5 w-5 text-blue-600 transition-transform duration-300" />
+      ) : (
+        <ChevronDownIcon className="h-5 w-5 text-blue-600 transition-transform duration-300" />
+      )}
+    </button>
 
-        <div
-            ref={contentRef}
-            style={{
-            maxHeight: isOpen ? `${contentRef.current?.scrollHeight}px` : "0px",
-            }}
-            className="px-6 text-sm text-gray-600 overflow-hidden transition-all duration-500 ease-in-out"
-        >
-            <div className="py-4">{faq.answer}</div>
-        </div>
-        </div>
-     
+    <div
+      ref={contentRef}
+      style={{
+        maxHeight: isOpen ? `${contentRef.current?.scrollHeight}px` : "0px",
+      }}
+      className="px-6 text-sm text-gray-600 overflow-hidden transition-all duration-500 ease-in-out"
+    >
+      <div className="py-4">{faq.answer}</div>
     </div>
+  </div>
+</div>
+
   );
 }
