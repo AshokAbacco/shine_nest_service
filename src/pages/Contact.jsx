@@ -4,7 +4,7 @@ import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/f
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { FaMapMarkedAlt } from "react-icons/fa";
-
+import ContactForms from '../components/ContactForm';
 const ContactForm = ({ isSidebar }) => {
     const [formData, setFormData] = useState({
         fullname: '',
@@ -14,23 +14,6 @@ const ContactForm = ({ isSidebar }) => {
         message: ''
     });
 
-    const handleChange = (e) => {
-        const { name, value } = e.target;
-        setFormData(prev => ({ ...prev, [name]: value }));
-    };
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log('Form Submitted:', formData);
-        alert('Your message has been sent!');
-        setFormData({
-            fullname: '',
-            email: '',
-            phone: '',
-            service: '',
-            message: ''
-        });
-    };
 
     return (
         <>
@@ -59,76 +42,7 @@ const ContactForm = ({ isSidebar }) => {
                     {/* Right Contact Form */}
                     <div className="contact-card">
                         <h1>Contact Us</h1>
-                        <form onSubmit={handleSubmit}>
-                            <div className="form-group">
-                                <label htmlFor="fullname">Full Name</label>
-                                <input
-                                    type="text"
-                                    id="fullname"
-                                    name="fullname"
-                                    value={formData.fullname}
-                                    onChange={handleChange}
-                                    required
-                                />
-                            </div>
-
-                            <div className="form-group">
-                                <label htmlFor="email">Email Address</label>
-                                <input
-                                    type="email"
-                                    id="email"
-                                    name="email"
-                                    value={formData.email}
-                                    onChange={handleChange}
-                                    required
-                                />
-                            </div>
-
-                            <div className="form-group">
-                                <label htmlFor="phone">Phone Number</label>
-                                <input
-                                    type="tel"
-                                    id="phone"
-                                    name="phone"
-                                    value={formData.phone}
-                                    onChange={handleChange}
-                                    required
-                                />
-                            </div>
-
-                            <div className="form-group">
-                                <label htmlFor="service">Service Interested In</label>
-                                <select
-                                    id="service"
-                                    name="service"
-                                    value={formData.service}
-                                    onChange={handleChange}
-                                    required
-                                ><option value="" disabled>-- Select a Service --</option>
-                                    <option value="cleaning">Cleaning Services</option>
-                                    <option value="reception">Reception & Front Desk</option>
-                                    <option value="pantry">Pantry Services</option>
-                                    <option value="pest">Pest Control</option>
-                                    <option value="landscaping">Landscaping & Gardening</option>
-                                    <option value="support">Office Support</option>
-                                    <option value="multiple">Multiple Services</option>
-                                </select>
-                            </div>
-
-                            <div className="form-group">
-                                <label htmlFor="message">Message</label>
-                                <textarea
-                                    id="message"
-                                    name="message"
-                                    rows="4"
-                                    value={formData.message}
-                                    onChange={handleChange}
-                                    required
-                                ></textarea>
-                            </div>
-
-                            <button type="submit" className="submit-btn">Send Message</button>
-                        </form>
+                        <ContactForms />
 
                         {!isSidebar && (
                             <a href="/" className="back-link">← Back to Home</a>
@@ -143,7 +57,9 @@ const ContactForm = ({ isSidebar }) => {
                 <div className="map-container">
                     <iframe
                         title="Google Map"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d242.91409178981107!2d77.56141930818556!3d13.059495461268048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae23c6b3c49891%3A0xeb24c1b7f096a66f!2sShine%20Nest%20Services!5e0!3m2!1sen!2sin!4v1755260734863!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="100%"
+                        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3886.607930613837!2d77.561174!3d13.060609999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTPCsDAzJzM4LjIiTiA3N8KwMzMnNDAuMiJF!5e0!3m2!1sen!2sin!4v1755264333323!5m2!1sen!2sin"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        width="100%"
                         height="400"
                         style={{ border: 0 }}
                         allowFullScreen=""
@@ -163,7 +79,7 @@ const ContactForm = ({ isSidebar }) => {
                         Explore our location and get directions easily through Google Maps.
                     </p>
                     <a
-                        href="https://maps.app.goo.gl/Zx2VRJ8uWDn4DHja7"
+                        href="https://maps.app.goo.gl/mHyX8JCPskAHwiTs6?g_st=aw"
                         className="map-cta-button"
                         target="_blank"
                         rel="noopener noreferrer"
