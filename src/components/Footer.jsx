@@ -35,7 +35,7 @@ const Footer = () => {
 
           </ul>
         </div>
-
+ 
         {/* Resources */}
         <div>
           <h3 className="text-lg font-semibold mb-3 text-white">Resources</h3>
