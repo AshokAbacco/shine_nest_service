@@ -37,10 +37,6 @@ const App = () => {
         <Route path="/pestcontrol" element={<PestControlServices />} />
         <Route path="/contract" element={<Contract />} />
         <Route path="/FAQ" element={<FaqSection />} />
-
-
-
-
       </Routes>
     </>
   )
