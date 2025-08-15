@@ -13,7 +13,7 @@ const Footer = () => {
             <img
               src="/images/img2.png"
               alt="Company Logo"
-              className="w-[300px]  object-contain"
+              className="w-[300px]  object-contain mt-8"
               style={{
                 filter: "",
               }}
@@ -31,23 +31,9 @@ const Footer = () => {
             <li><Link to="/services">Services</Link></li>
             <li><Link to="/testimonials">Testimonials</Link></li>
             <li><Link to="/FAQ">FAQs</Link></li>
-
-            <li><a href="#">News</a></li>
-            <li><a href="#">Recent Updates</a></li>
-
           </ul>
         </div>
- 
-        {/* Resources */}
-        <div>
-          <h3 className="text-lg font-semibold mb-3 text-white">Resources</h3>
-          <ul className="space-y-2 text-gray-300">
-            <li><Link to="#">Development Tutorials</Link></li>
-            <li><Link to="#">Documentation</Link></li>
-            <li><Link to="#">Blog</Link></li>
 
-          </ul>
-        </div>
 
         {/* Support */}
         <div>
@@ -62,7 +48,8 @@ const Footer = () => {
         {/* Address in bottom right */}
         <div className="text-white text-sm leading-5 md:text-light max-w-xs">
           <h1 className="text-[1.2rem] font-semibold mb-4">Address</h1>
-          <p>Ground Floor, No 20, Krishna Temple Road, Near Ramya Provision Store, Dodda Bommasandra, Bengaluru, 560097</p>
+          <p>Ground Floor, Building No 20, Krishna Temple Road, Near Ramya Provision Store, Dodda Bommasandra, Bengaluru, 560097</p>
+          <p>Phone: +91 9739547999</p>
         </div>
 
       </div>
@@ -81,7 +68,7 @@ const Footer = () => {
         <div className="flex space-x-4 mb-4 md:mb-0">
           <Link to="/terms-and-privacy">Privacy Policy</Link>
           <Link to="/terms-and-privacy">Terms & Conditions</Link>
-          <Link to="/contact">Support</Link>
+          <a href="mailto:info@shinenestservices.in" >Support</a>
         </div>
 
         {/* Copyright */}

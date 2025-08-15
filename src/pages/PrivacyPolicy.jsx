@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
-
+import { RiFileEditFill } from "react-icons/ri";
+import { TbBrandDatabricks } from "react-icons/tb";
+import { MdSettingsSuggest } from "react-icons/md";
+import { FaLock } from "react-icons/fa6";
 const TermsAndPrivacy = () => {
     const [activeSection, setActiveSection] = useState('privacy');
 
@@ -73,9 +76,7 @@ const TermsAndPrivacy = () => {
                         <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-8 hover:shadow-xl transition-shadow duration-300">
                             <div className="flex items-center mb-4">
                                 <div className="w-12 h-12 bg-[#4400ff] bg-opacity-10 rounded-full flex items-center justify-center mr-4">
-                                    <svg className="w-6 h-6 text-[#4400ff]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                    </svg>
+                                    <RiFileEditFill className="text-white h-6 w-8" />
                                 </div>
                                 <h3 className="text-xl font-bold text-gray-800">Consent</h3>
                             </div>
@@ -88,9 +89,7 @@ const TermsAndPrivacy = () => {
                         <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-8 hover:shadow-xl transition-shadow duration-300">
                             <div className="flex items-center mb-4">
                                 <div className="w-12 h-12 bg-[#4400ff] bg-opacity-10 rounded-full flex items-center justify-center mr-4">
-                                    <svg className="w-6 h-6 text-[#4400ff]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                    </svg>
+                                    <TbBrandDatabricks className="text-white h-6 w-8" />
                                 </div>
                                 <h3 className="text-xl font-bold text-gray-800">Collected Information</h3>
                             </div>
@@ -103,9 +102,7 @@ const TermsAndPrivacy = () => {
                         <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-8 hover:shadow-xl transition-shadow duration-300">
                             <div className="flex items-center mb-4">
                                 <div className="w-12 h-12 bg-[#4400ff] bg-opacity-10 rounded-full flex items-center justify-center mr-4">
-                                    <svg className="w-6 h-6 text-[#4400ff]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4" />
-                                    </svg>
+                                    <MdSettingsSuggest className="text-white h-6 w-8" />
                                 </div>
                                 <h3 className="text-xl font-bold text-gray-800">Cookies</h3>
                             </div>
@@ -123,9 +120,7 @@ const TermsAndPrivacy = () => {
                         <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-8 hover:shadow-xl transition-shadow duration-300">
                             <div className="flex items-center mb-4">
                                 <div className="w-12 h-12 bg-[#4400ff] bg-opacity-10 rounded-full flex items-center justify-center mr-4">
-                                    <svg className="w-6 h-6 text-[#4400ff]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                                    </svg>
+                                    <FaLock className="text-white h-6 w-8" />
                                 </div>
                                 <h3 className="text-xl font-bold text-gray-800">How We Use Your Information</h3>
                             </div>
@@ -284,19 +279,19 @@ const TermsAndPrivacy = () => {
                                 </p>
                                 <div className="space-y-2">
                                     <a
-                                        href="mailto:support@example.com"
+                                        href="mailto:info@shinenestservices.in"
                                         className="flex items-center text-white hover:text-gray-200 transition-colors"
                                     >
                                         <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                                         </svg>
-                                        support@example.com
+                                        info@shinenestservices.in
                                     </a>
                                     <div className="flex items-center">
                                         <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                                         </svg>
-                                        +91-1234567890
+                                        +91-9739547999
                                     </div>
                                 </div>
                             </div>

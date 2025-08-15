@@ -43,9 +43,9 @@ const ContactForm = ({ isSidebar }) => {
                         <p>We’re here to help and answer any questions you might have. Let’s build something great together.</p>
 
                         <div className="contact-detail">
-                            <p><strong>Phone:</strong> +91 98765 43210</p>
-                            <p><strong>Email:</strong> support@example.com</p>
-                            <p><strong>Address:</strong> 123 Business St, City, India</p>
+                            <p><strong>Phone:</strong> +91 9739547999</p>
+                            <p><strong>Email:</strong> info@shinenestservices.in</p>
+                            <p><strong>Address:</strong> Ground floor, Building No 20, Krishna Temple Road, Near Ramya Provision Store, Dodda Bommasandra, Bengaluru, 560097</p>
                         </div>
 
                         <div className="social-icons">
@@ -143,8 +143,7 @@ const ContactForm = ({ isSidebar }) => {
                 <div className="map-container">
                     <iframe
                         title="Google Map"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.461042853582!2d78.38573107484703!3d17.437538483419123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb939c45797ff9%3A0x26ea5810526010ea!2sGoogle%20Hyderabad!5e0!3m2!1sen!2sin!4v1691177050546!5m2!1sen!2sin"
-                        width="100%"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d242.91409178981107!2d77.56141930818556!3d13.059495461268048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae23c6b3c49891%3A0xeb24c1b7f096a66f!2sShine%20Nest%20Services!5e0!3m2!1sen!2sin!4v1755260734863!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="100%"
                         height="400"
                         style={{ border: 0 }}
                         allowFullScreen=""
@@ -164,7 +163,7 @@ const ContactForm = ({ isSidebar }) => {
                         Explore our location and get directions easily through Google Maps.
                     </p>
                     <a
-                        href="https://www.google.com/maps"
+                        href="https://maps.app.goo.gl/Zx2VRJ8uWDn4DHja7"
                         className="map-cta-button"
                         target="_blank"
                         rel="noopener noreferrer"
