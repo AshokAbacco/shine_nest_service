@@ -31,6 +31,21 @@ const Footer = () => {
             <li><Link to="/services">Services</Link></li>
             <li><Link to="/testimonials">Testimonials</Link></li>
             <li><Link to="/FAQ">FAQs</Link></li>
+
+            <li><a href="#">News</a></li>
+            <li><a href="#">Recent Updates</a></li>
+
+          </ul>
+        </div>
+ 
+        {/* Resources */}
+        <div>
+          <h3 className="text-lg font-semibold mb-3 text-white">Resources</h3>
+          <ul className="space-y-2 text-gray-300">
+            <li><Link to="#">Development Tutorials</Link></li>
+            <li><Link to="#">Documentation</Link></li>
+            <li><Link to="#">Blog</Link></li>
+
           </ul>
         </div>
 
