@@ -65,7 +65,7 @@ const HeroCarousel = () => {
     ];
 
     return (
-        <section className="relative w-screen h-screen overflow-hidden flex items-center justify-center px-4 text-center">
+        <section className="relative w-screen h-[75vh] overflow-hidden flex items-center justify-center px-4 text-center">
             {/* Background image */}
             <div
                 className="absolute inset-0 w-full h-full bg-cover bg-center scale-105 transition-all duration-1000"

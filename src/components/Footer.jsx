@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Facebook, Twitter, Instagram, Github } from "lucide-react";
+import { Facebook, Instagram, Linkedin, Github } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -49,6 +49,7 @@ const Footer = () => {
         <div className="text-white text-sm leading-5 md:text-light max-w-xs">
           <h1 className="text-[1.2rem] font-semibold mb-4">Address</h1>
           <p>Ground Floor, Building No 20, Krishna Temple Road, Near Ramya Provision Store, Dodda Bommasandra, Bengaluru, 560097</p>
+          <p>Mail: info@shinenestservices.in</p>
           <p>Phone: +91 9739547999</p>
         </div>
 
@@ -58,10 +59,11 @@ const Footer = () => {
       <div className="mt-10 border-t border-gray-700 pt-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
         {/* Social Icons */}
         <div className="flex space-x-5 mb-4 md:mb-0">
-          <a href="#"><Twitter className="hover:text-white" size={20} /></a>
-          <a href="#"><Facebook className="hover:text-white" size={20} /></a>
-          <a href="#"><Instagram className="hover:text-white" size={20} /></a>
-          <a href="#"><Github className="hover:text-white" size={20} /></a>
+          {/* <a href="#"><Twitter className="hover:text-white" size={20} /></a> */}
+          <a href="https://www.facebook.com/share/16wShkRwT3/" target="blank"><Facebook className="hover:text-white" size={20} /></a>
+          <a href="https://www.linkedin.com/company/shine-nest-services/" target="blank" ><Linkedin className="hover:text-white" size={20} /></a>
+          <a href="https://www.instagram.com/shinenestservices.in/" target="blank" ><Instagram className="hover:text-white" size={20} /></a>
+          {/* <a href="#"><Github className="hover:text-white" size={20} /></a> */}
         </div>
 
         {/* Links */}
