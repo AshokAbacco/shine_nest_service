@@ -8,16 +8,16 @@ import TestimonialsSection from '../components/TestimonialsSection';
 // import ClientMarquee from '../components/ClientMarquee';
 import Footer from '../components/Footer';
 import ServicesSection from '../components/ServicesSection';
+import StatsSection from '../components/StatsSection';
 const HomePage = () => {
     return (
         <div className="x text-white">
             <Navbar />
             {/* Hero Carousel */}
-            <section className="h-screen flex items-center justify-center">
+            <section className="">
                 <HeroCarousel />
-
+                <StatsSection />
             </section>
-
             {/* Industries We Serve + Vision + Mission */}
             <section className="px-8 py-16 bg-white text-[#030637] grid grid-cols-1 lg:grid-cols-3 gap-8">
                 <motion.div

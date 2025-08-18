@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { Phone, Mail } from 'lucide-react'; // icons
 import logo from '../assets/sns-logo.png'; // Adjust path as needed
 
 const Navbar = () => {
@@ -8,9 +9,9 @@ const Navbar = () => {
 
     return (
         <nav
-            className="bg-white text-[#4300FF]"
+            className="bg-white text-[#4300FF] w-[100vw]"
             style={{
-                boxShadow: '2px 2px 10px #4300FF', // Updated shadow with #4300FF
+                boxShadow: '0px 1px 5px #4300FF',
                 zIndex: 50,
                 position: 'sticky',
                 top: 0
@@ -41,6 +42,22 @@ const Navbar = () => {
                         </li>
                     ))}
                 </ul>
+
+                {/* Contact Info (Desktop) */}
+                <div className="hidden md:flex flex flex-col items-start gap-2 space-x-6 text-sm font-medium text-blue-900">
+                    <div className="flex items-center space-x-2">
+                        <Phone size={16} />
+                        <a href="tel:+919739547999" className="hover:text-[#4300FF]">
+                            +91 9739547999
+                        </a>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                        <Mail size={16} />
+                        <a href="mailto:info@shinenestservices.in" className="hover:text-[#4300FF]">
+                            info@shinenestservices.in
+                        </a>
+                    </div>
+                </div>
 
                 {/* Mobile Menu Button */}
                 <button
@@ -75,7 +92,7 @@ const Navbar = () => {
 
             {/* Mobile Nav Menu */}
             {isOpen && (
-                <ul className="md:hidden px-4 pb-4 space-y-2 bg-[#4300FF] text-white">
+                <ul className="md:hidden px-4 pb-4 space-y-3 bg-[#4300FF] text-white">
                     {[
                         { label: 'Home', to: '/' },
                         { label: 'About', to: '/about' },
@@ -89,6 +106,16 @@ const Navbar = () => {
                             </Link>
                         </li>
                     ))}
+
+                    {/* Contact Info in Mobile Menu */}
+                    <li className="flex items-center space-x-2">
+                        <Phone size={16} />
+                        <a href="tel:+919739547999">+91 9739547999</a>
+                    </li>
+                    <li className="flex items-center space-x-2">
+                        <Mail size={16} />
+                        <a href="mailto:info@shinenestservices.in">info@shinenestservices.in</a>
+                    </li>
                 </ul>
             )}
         </nav>
