@@ -14,57 +14,44 @@ function ServicePage() {
     AOS.init({ duration: 800 });
   }, []);
 
-const services = [
+ const services = [
   {
     title: "Cleaning Services",
-    description: "Professional-grade cleaning services including vacuuming, kitchen cleaning, bathroom sanitization, and deep cleaning to maintain a hygienic and fresh environment for your workplace.",
-    details: "We offer daily, weekly, or monthly cleaning schedules based on your needs. Our team uses eco-friendly cleaning products and provides carpet, upholstery, and window cleaning. High-touch surfaces are disinfected to ensure a safe and hygienic environment.",
     img: "https://5.imimg.com/data5/SELLER/Default/2024/2/385902315/AG/ZU/NV/12247396/vacuum-cleaning-service-500x500.jpg",
-    route: "/cleaning-services",
+    description: `We offer complete cleaning solutions tailored to corporate and commercial spaces on a contract basis. From daily office cleaning to deep sanitization, carpet and upholstery care, restroom hygiene, and post-construction cleanup, our trained staff ensures a spotless, safe, and welcoming workplace environment.`,
   },
   {
     title: "Reception & Front Desk Services",
-    description: "Professional reception services with trained staff to handle visitor management, call handling, appointment scheduling, and creating a welcoming first impression for your business.",
-    details: "Our receptionists are friendly and professional, managing visitor check-ins and security coordination. They handle calls, emails, and appointments efficiently, ensuring your front desk creates a positive first impression for your clients and visitors.",
-    img: "https://media.istockphoto.com/id/1222545476/photo/handsome-smiling-cleaner-looking-at-camera-while-standing-near-computer-monitors.jpg?s=612x612&w=0&k=20&c=qBZsQ5wdd8s9IUGV9D8ARTGzOWvv0c05cMyCcwk4RxY=",
-    route: "/reception-services",
+    img: "https://media.istockphoto.com/id/1448294355/photo/hotel-concierge-working.jpg?s=612x612&w=0&k=20&c=2nqXkQ6BbxFmqx-llHKdv2Ev0Aas4E7105N5ujIg0ec=",
+    description: `Our professional reception and front desk teams manage your office’s first impression with efficiency and courtesy. We handle visitor management, helpdesk operations, call/message coordination, and guest hospitality, ensuring smooth daily operations and a professional image.`,
   },
   {
     title: "Pantry Services",
-    description: "Complete pantry management including tea/coffee service, meal preparation, kitchen maintenance, inventory management, and ensuring a well-stocked and hygienic pantry area.",
-    details: "Our pantry services include tea/coffee service for staff and visitors, meal preparation, and snack management. We handle inventory tracking, restocking, and ensure kitchen hygiene and proper utensil management for a seamless pantry experience.",
-    img: "https://mccoymart.com/post/wp-content/uploads/2019/05/Kitchen-cupboard-cleaner.jpg",
-    route: "/pantry-services",
+    img: "https://4.imimg.com/data4/UJ/KT/MY-18243090/pantry-services-500x500.jpg",
+    description: `We manage complete pantry operations, including vending machine refills, tea/coffee/snacks services, and overall pantry upkeep. Our staff ensures timely service and a clean, organized pantry area to keep your employees refreshed and motivated.`,
   },
   {
     title: "Mailroom & Courier Services",
-    description: "Efficient mailroom operations including sorting, distribution, courier coordination, package handling, and document management to ensure smooth communication flow.",
-    details: "We manage incoming and outgoing mail, coordinate couriers with tracking, handle document management and scanning, and securely handle sensitive packages to ensure smooth office communication.",
-    img: "https://media.istockphoto.com/id/1394199344/photo/document-management-system-or-dms-automation-software-to-archiving-and-efficiently-manage-and.jpg?s=612x612&w=0&k=20&c=YaQU7BoPNvaxANtTdRMGhpaePXt7q5UlOYRjKiGqR8I=",
-    route: "/mailroom-services",
+    img: "https://5.imimg.com/data5/SELLER/Default/2023/9/344550461/SZ/QS/XT/25219892/express-document-courier-service-500x500.jpg",
+    description: `With dedicated staff, we streamline your internal and external communication. From internal mail distribution and courier handling to package tracking and secure document dispatch, we ensure fast, reliable, and professional mailroom management.`,
   },
   {
     title: "Pest Control Services",
-    description: "Comprehensive pest management using eco-friendly solutions to eliminate and prevent infestations, ensuring a safe and healthy environment for your workplace and employees.",
-    details: "We conduct routine pest inspections and treatments using eco-friendly and safe chemicals. Our services cover rodent, insect, and termite control, along with preventive measures to avoid future infestations, keeping your workplace safe and healthy.",
-    img: "https://cpimg.tistatic.com/05837563/b/4/Bathroom-Cleaning-Services.jpg",
-    route: "/pest-control",
+    img: "https://techbullion.com/wp-content/uploads/2024/07/pest.webp",
+    description: `We provide routine and specialized pest management solutions, including rodent control, termite treatment, mosquito and fly prevention, and fumigation services. Our methods are safe, effective, and tailored for long-term results in corporate environments.`,
   },
   {
     title: "Landscaping & Gardening",
-    description: "Professional landscaping and gardening services including plant maintenance, lawn care, garden design, irrigation systems, and creating beautiful outdoor spaces.",
-    details: "Our landscaping and gardening services include lawn mowing, plant care, garden design, irrigation setup, and seasonal maintenance. We create and maintain aesthetically pleasing outdoor spaces for your workplace or residential areas.",
-    img: "https://skbuildingservices.com/wp-content/uploads/2023/02/what-is-the-difference-between-window-washing-and-window-cleaning_-scaled-1.jpeg",
-    route: "/landscaping-services",
+    img: "https://5.imimg.com/data5/SELLER/Default/2023/5/310550835/PC/IY/OS/152095378/garden-landscape-maintenance-service.jpeg",
+    description: `Our landscaping team maintains vibrant and sustainable green spaces. We offer lawn maintenance, garden design, indoor plant care, and irrigation management to enhance your office’s environment and employee well-being.`,
   },
   {
     title: "Office Support Services",
-    description: "Comprehensive office support including administrative assistance, document management, filing, data entry, and general office operations to boost productivity.",
-    details: "Our office support services include office boy/peon tasks, stationery management, filing and document support, photocopying and printing assistance, as well as data entry and record management. This ensures smooth daily operations and increased workplace productivity.",
-    img: "https://t3.ftcdn.net/jpg/02/68/41/46/360_F_268414618_zpZvftaDcCLJj6tgGMhNNSh9gRUf6IOv.jpg",
-    route: "/contract",
+    img: "https://5.imimg.com/data5/SELLER/Default/2022/7/CQ/SG/BU/126642220/office-cleaning-service.jpg",
+    description: `We provide trained support staff for day-to-day office assistance, including office boy/peon services, stationery management, document handling, and photocopy/printing support. Our staff integrates seamlessly with your team to keep operations running smoothly.`,
   },
 ];
+
 
 
 
@@ -219,18 +206,20 @@ const services = [
               data-aos-delay={index * 100}
             >
               {/* Image Section */}
-              <div className="lg:w-1/2 relative group">
-                <div className="relative overflow-hidden rounded-3xl shadow-2xl transform group-hover:scale-105 transition-all duration-700">
-                  <img
-                    src={service.img}
-                    alt={service.title}
-                    className="w-full h-80 object-cover"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-blue-900/30 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                </div>
-                {/* Floating gradient background */}
-                <div className="absolute -inset-4 bg-gradient-to-r from-blue-400/20 to-indigo-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 -z-10"></div>
+              <div className="lg:w-1/2 relative group flex justify-center">
+                  <div className="relative overflow-hidden rounded-3xl shadow-2xl transform group-hover:scale-105 transition-all duration-700 w-10/12">
+                    <img
+                      src={service.img}
+                      alt={service.title}
+                      className="w-full h-72 object-cover rounded-3xl"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-blue-900/30 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl"></div>
+                  </div>
+
+                  {/* Floating gradient background matching smaller div width */}
+                  <div className="absolute w-10/12 h-75 top-0 left-1/2 -translate-x-1/2 bg-gradient-to-r from-blue-400/20 to-indigo-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 -z-10"></div>
               </div>
+
 
               {/* Content Section */}
               <div className="lg:w-1/2 space-y-6">
@@ -244,9 +233,7 @@ const services = [
                 <p className="text-lg text-slate-600 leading-relaxed">
                   {service.description}
                 </p>
-                <p className="text-lg text-slate-600 leading-relaxed">
-                  {service.details}.
-                </p>
+                 
 
                 {/* Modern CTA Button */}
                 {/* <div className="pt-4">
