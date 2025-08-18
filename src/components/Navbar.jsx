@@ -29,6 +29,7 @@ const Navbar = () => {
                         { label: 'Home', to: '/' },
                         { label: 'About', to: '/about' },
                         { label: 'Services', to: '/services' },
+                        { label: 'Why Choose Us', to: '/why-choose-us' },
                         { label: 'Contact', to: '/contact' },
                         { label: 'Testimonials', to: '/testimonials' }
                     ].map(({ label, to }) => (

@@ -14,6 +14,7 @@ import ScrollToTop from './components/ScrollToTop.jsx';
 import FaqSection from './pages/FaqSection.jsx';
 
 import PrivacyPolicy from "./pages/PrivacyPolicy.jsx";
+import WhyChooseUsPage from './pages/WhyChooseUsPage.jsx';
 
 
 
@@ -37,6 +38,8 @@ const App = () => {
         <Route path="/pestcontrol" element={<PestControlServices />} />
         <Route path="/contract" element={<Contract />} />
         <Route path="/FAQ" element={<FaqSection />} />
+        <Route path="/why-choose-us" element={<WhyChooseUsPage />} />
+
       </Routes>
     </>
   )
