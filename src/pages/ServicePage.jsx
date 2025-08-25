@@ -26,9 +26,9 @@ function ServicePage() {
     description: `Our professional reception and front desk teams manage your office’s first impression with efficiency and courtesy. We handle visitor management, helpdesk operations, call/message coordination, and guest hospitality, ensuring smooth daily operations and a professional image.`,
   },
   {
-    title: "Pantry Services",
-    img: "https://4.imimg.com/data4/UJ/KT/MY-18243090/pantry-services-500x500.jpg",
-    description: `We manage complete pantry operations, including vending machine refills, tea/coffee/snacks services, and overall pantry upkeep. Our staff ensures timely service and a clean, organized pantry area to keep your employees refreshed and motivated.`,
+    title: "Facade Cleaning Service",
+    img: "/faced.png",
+    description: `We manage complete facade cleaning operations, ensuring your building's exterior is spotless and well-maintained. Our team uses specialized equipment and eco-friendly cleaning solutions to enhance your property's curb appeal.`,
   },
   {
     title: "Mailroom & Courier Services",
